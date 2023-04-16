@@ -23,6 +23,14 @@
             <optional>true</optional> <!-- 表示依赖不会传递 -->
         </dependency>
         <!--核心模块-->
-
+        <dependency>
+            <groupId>org.legalaid</groupId>
+            <artifactId>legalaid-core</artifactId>
+        </dependency>
+        <!--微信api模块-->
+        <dependency>
+            <groupId>org.legalaid</groupId>
+            <artifactId>legalaid-wxapi</artifactId>
+        </dependency>
     </dependencies>
 </project>
