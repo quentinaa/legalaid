@@ -9,7 +9,7 @@
         <version>1.0</version>
     </parent>
 
-    <artifactId>legalaid-wxapi</artifactId>
+    <artifactId>legalaid-admin</artifactId>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
@@ -17,7 +17,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <description>
-        微信api模块
+        后台管理api
     </description>
     <dependencies>
         <dependency>
@@ -26,4 +26,5 @@
             <version>${legalaid.version}</version>
         </dependency>
     </dependencies>
+
 </project>

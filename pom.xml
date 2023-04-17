@@ -12,6 +12,8 @@
         <module>legalaid-all</module>
         <module>legalaid-core</module>
         <module>legalaid-wxapi</module>
+        <module>legalaid-common</module>
+        <module>legalaid-admin</module>
     </modules>
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
@@ -116,11 +118,11 @@
                 <version>${legalaid.version}</version>
             </dependency>
             <!--公共模块-->
-           <!-- <dependency>
+            <dependency>
                 <groupId>org.legalaid</groupId>
                 <artifactId>legalaid-common</artifactId>
                 <version>${legalaid.version}</version>
-            </dependency>-->
+            </dependency>
         </dependencies>
     </dependencyManagement>
     <build>
