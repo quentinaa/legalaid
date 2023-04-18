@@ -38,4 +38,19 @@ public class TestCase {
         legalAd.setPosition("1");
         System.out.println(legalAdService.selectLegalAdList(legalAd));
     }
+    @Test
+    public void addLegalAds( ){
+       LegalAd legalAd=new LegalAd();
+       long id=2;
+       legalAd.setId(id);
+        legalAd.setLink("1");
+        legalAd.setName("zy");
+        legalAd.setPosition("1");
+        legalAd.setUrl("1");
+        legalAdService.addLegalAds(legalAd);
+    }
+    @Test
+    public void deleteLegalAdsById() {
+        legalAdService.deleteLegalAdsById(2);
+    }
 }
