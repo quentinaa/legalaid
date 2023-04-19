@@ -1,6 +1,6 @@
-package org.legalaid.service;
+package org.legalaid.wxapi.service;
 
-import org.legalaid.domain.LegalAd;
+import org.legalaid.wxapi.domain.LegalAd;
 
 import java.util.List;
 

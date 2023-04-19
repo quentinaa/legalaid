@@ -1,8 +1,8 @@
-package org.legalaid.controller;
+package org.legalaid.wxapi.controller;
 
 import org.legalaid.common.core.controller.BaseController;
-import org.legalaid.domain.LegalAd;
-import org.legalaid.service.LegalAdService;
+import org.legalaid.wxapi.domain.LegalAd;
+import org.legalaid.wxapi.service.LegalAdService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

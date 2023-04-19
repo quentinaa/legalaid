@@ -3,9 +3,9 @@ package test;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.legalaid.LegalAidApplication;
-import org.legalaid.domain.LegalAd;
-import org.legalaid.mapper.LegalAdMapper;
-import org.legalaid.service.LegalAdService;
+import org.legalaid.wxapi.domain.LegalAd;
+import org.legalaid.wxapi.mapper.LegalAdMapper;
+import org.legalaid.wxapi.service.LegalAdService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
@@ -53,4 +53,7 @@ public class TestCase {
     public void deleteLegalAdsById() {
         legalAdService.deleteLegalAdsById(2);
     }
+
+
+
 }

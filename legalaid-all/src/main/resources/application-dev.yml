@@ -26,7 +26,7 @@ spring:
         stat:
           enabled: false
   file-storage: #文件存储配置
-    default-platform: aliyun-oss-1 #默认使用的存储平台  修改需要的存储平台（platform）
+    default-platform: minio-1 #默认使用的存储平台  修改需要的存储平台（platform）
     thumbnail-suffix: ".min.jpg" #缩略图后缀，例如【.min.jpg】【.png】
     local: # 本地存储，不使用的情况下可以不写
       - platform: local-1 # 存储平台标识
@@ -46,9 +46,9 @@ spring:
         base-path: hy/ # 基础路径
     aliyun-oss: # 阿里云 OSS ，不使用的情况下可以不写
       - platform: aliyun-oss-1 # 存储平台标识
-        enable-storage: true  # 启用存储
-        access-key: LTAI5tLUYEcwQ4SXgwFHSCxW
-        secret-key: J1HsIsW8v32KuQKNt9j8VDEDnQZfbN
+        enable-storage: false  # 启用存储
+        access-key:
+        secret-key:
         end-point: https://oss-cn-hangzhou.aliyuncs.com
         bucket-name: legalaid-xiong
         domain: https://legalaid-xiong.oss-cn-hangzhou.aliyuncs.com/ # 访问域名，注意“/”结尾，例如：https://abc.oss-cn-shanghai.aliyuncs.com/

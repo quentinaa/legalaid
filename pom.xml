@@ -26,6 +26,7 @@
         <druid.version>1.2.11</druid.version>
         <mybatisplus-spring-boot.version>3.5.2</mybatisplus-spring-boot.version>
         <mybatispluscore-spring-boot.version>3.5.2</mybatispluscore-spring-boot.version>
+        <mybatisplusgenerator-spring-boot.version>3.5.2</mybatisplusgenerator-spring-boot.version>
         <pagehelper.boot.version>1.4.3</pagehelper.boot.version>
         <commons.io.version>2.11.0</commons.io.version>
         <commons.fileupload.version>1.4</commons.fileupload.version>
@@ -67,6 +68,12 @@
                 <groupId>com.baomidou</groupId>
                 <artifactId>mybatis-plus-core</artifactId>
                 <version>${mybatispluscore-spring-boot.version}</version>
+            </dependency>
+            <!--mybatis-plus的逆向生成工具-->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-generator</artifactId>
+                <version>${mybatisplusgenerator-spring-boot.version}</version>
             </dependency>
 
             <!-- pagehelper 分页插件 -->
@@ -121,6 +128,11 @@
             <dependency>
                 <groupId>org.legalaid</groupId>
                 <artifactId>legalaid-common</artifactId>
+                <version>${legalaid.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.legalaid</groupId>
+                <artifactId>legalaid-admin</artifactId>
                 <version>${legalaid.version}</version>
             </dependency>
         </dependencies>

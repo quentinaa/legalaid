@@ -23,7 +23,11 @@
         <dependency>
             <groupId>org.legalaid</groupId>
             <artifactId>legalaid-common</artifactId>
-            <version>${legalaid.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 

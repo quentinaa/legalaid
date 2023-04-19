@@ -1,4 +1,4 @@
-package org.legalaid.domain;
+package org.legalaid.admin.domain;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
@@ -14,14 +14,14 @@ import java.util.Date;
  * @date 2023-04-16
  */
 @TableName("legal_ad")
-public class LegalAd implements Serializable {
+public class AdminLegalAd implements Serializable {
     private static final long serialVersionUID = 1L;
 
     /**
      * 序号
      */
     @TableField("id")
-    private Long id;
+    private Integer id;
 
     /**
      * 标题
@@ -84,11 +84,11 @@ public class LegalAd implements Serializable {
     @TableField("deleted")
     private String deleted;
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 

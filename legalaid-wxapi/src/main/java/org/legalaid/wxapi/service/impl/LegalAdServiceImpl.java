@@ -1,11 +1,9 @@
-package org.legalaid.service.impl;
+package org.legalaid.wxapi.service.impl;
 
-import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
-import org.legalaid.domain.LegalAd;
-import org.legalaid.mapper.LegalAdMapper;
-import org.legalaid.service.LegalAdService;
+import org.legalaid.wxapi.domain.LegalAd;
+import org.legalaid.wxapi.mapper.LegalAdMapper;
+import org.legalaid.wxapi.service.LegalAdService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,7 +17,7 @@ import java.util.List;
  * @date 2023/4/17 19:44:28
  */
 @Service
-public class LegalAdServiceImpl implements LegalAdService  {
+public class LegalAdServiceImpl implements LegalAdService {
 
     @Autowired
     private LegalAdMapper legalAdMapper;
