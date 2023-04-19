@@ -1,5 +1,6 @@
 package org.legalaid;
 
+import cn.xuyanwu.spring.file.storage.EnableFileStorage;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -10,6 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @description
  * @date 2023/4/16 16:42:06
  */
+@EnableFileStorage
 @SpringBootApplication
 @MapperScan("org.legalaid.mapper")//指定mapper持久层接口所在包路径
 public class LegalAidApplication {

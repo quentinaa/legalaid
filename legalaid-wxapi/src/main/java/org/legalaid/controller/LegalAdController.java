@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * @author xiong
  * @version 1.0
- * @description
+ * @description 广告控制层
  * @date 2023/4/17 20:07:10
  */
 @RestController
@@ -20,12 +20,14 @@ public class LegalAdController extends BaseController {
     @Autowired
     private LegalAdService legalAdService;
 
-
     @GetMapping("/list")
     public List<LegalAd> list(LegalAd legalAd){
         List<LegalAd> legalAds = legalAdService.selectLegalAdList(legalAd);
         return legalAds;
     }
+
+
+
     //添加广告
     @PostMapping("/addLegalAds")
     public void addLegalAds(@RequestBody LegalAd legalAd){

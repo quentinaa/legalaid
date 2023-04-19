@@ -32,5 +32,10 @@
             <groupId>org.legalaid</groupId>
             <artifactId>legalaid-wxapi</artifactId>
         </dependency>
+        <!--公共业务模块-->
+        <dependency>
+            <groupId>org.legalaid</groupId>
+            <artifactId>legalaid-common</artifactId>
+        </dependency>
     </dependencies>
 </project>

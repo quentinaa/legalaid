@@ -1,6 +1,11 @@
 spring:
   profiles:
     active: dev
+  #文件上传
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 20MB
 mybatis-plus:
   configuration: # 支持mybatis的原生的配置，就是既可以写sql也可以调用封装好方法来执行增删改查
     map-underscore-to-camel-case: true # 是否开启驼峰命名规则，默认是false
