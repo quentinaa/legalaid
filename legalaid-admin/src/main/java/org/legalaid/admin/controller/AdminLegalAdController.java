@@ -1,9 +1,12 @@
 package org.legalaid.admin.controller;
 
+import com.baomidou.mybatisplus.core.metadata.IPage;
 import org.legalaid.admin.domain.AdminLegalAd;
 import org.legalaid.admin.service.AdminLegalAdService;
 import org.legalaid.common.core.controller.BaseController;
 import org.legalaid.common.core.domain.AjaxResult;
+import org.legalaid.common.core.domain.R;
+import org.legalaid.common.core.page.TableDataInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
@@ -21,9 +24,9 @@ public class AdminLegalAdController extends BaseController {
     private AdminLegalAdService adminLegalAdService;
 
     @GetMapping("/list")
-    public List<AdminLegalAd> list(AdminLegalAd legalAd){
-        List<AdminLegalAd> legalAds = adminLegalAdService.selectLegalAdList(legalAd);
-        return legalAds;
+    public R list(int pageNum, int pageSize, AdminLegalAd legalAd){
+        IPage<AdminLegalAd> iPage = adminLegalAdService.adminPageList(pageNum,pageSize,legalAd);
+        return R.ok(iPage);
     }
 
     /**
@@ -31,8 +34,9 @@ public class AdminLegalAdController extends BaseController {
      * @param adminLegalAd
      * @return
      */
-    @PostMapping("/addAdminLegalAd")
+    @PostMapping
     public AjaxResult addAdminLegalAd(@RequestBody AdminLegalAd adminLegalAd){
       return toAjax(adminLegalAdService.saveAdminLegalAd(adminLegalAd));
     }
+
 }

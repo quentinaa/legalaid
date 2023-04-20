@@ -12,3 +12,9 @@ mybatis-plus:
     auto-mapping-behavior: full # 配置自动映射策略，让mybatis来自动把数据库自动映射对应的实体
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl # 打印sql语句，日志
   mapper-locations: classpath*:**.mapper/*Mapper.xml #指定mybatis的xml文件位置 classpath*不仅包含class路径，还包括jar文件中（class路径）进行查找
+  global-config:
+    db-config:
+      logic-delete-field: deleted #默认deleted
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+      id-type: auto
